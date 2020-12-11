@@ -1,0 +1,16 @@
+${header}
+<h2>Employees</h2>
+<a href="/">Back to home page</a>
+<ul class="employee-list">
+  ${
+  employees.map(e => `
+  <li>
+    <a href="/employees/${e.id}">
+      ${e.lastName},
+      ${e.firstName} 
+    </a>
+  </li>
+  `).join('')
+  }
+</ul>
+${footer}

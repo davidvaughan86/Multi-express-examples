@@ -1,0 +1,34 @@
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+html, body {
+    padding: 0;
+    margin: 0;
+    font-family: helvetica, sans-serif;
+}
+
+html {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    margin: 0 auto;
+    width: 80%;
+}
+
+h1, h2 {
+    /* margin: 0 auto; */
+}
+
+.page-links a {
+    display: inline-block;
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
+.page-links .current-page {
+    font-weight: bolder;
+    font-size: 1.2em;
+}

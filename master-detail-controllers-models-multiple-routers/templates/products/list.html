@@ -1,0 +1,15 @@
+${header}
+<h2>Products</h2>
+<a href="/">Back to home page</a>
+<ul class="product-list">
+  ${
+  products.map(p => `
+  <li>
+    <a href="/products/${p.id}">
+      ${p.name}
+    </a>
+  </li>
+  `).join('')
+  }
+</ul>
+${footer}
