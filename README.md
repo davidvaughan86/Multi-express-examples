@@ -44,22 +44,15 @@ Shows a list of products.
 
 Each product links to a product details page.
 
-## master-detail with controllers + models
+## `master-detail-controllers-models`
 
-Refactors the master-detail app to use a controller and model for products.
+Reorganizes code so that it's not all in the `index.js`
 
-The app matches the route and calls the controller.
-The controller puts model data into the res.render()
+## `master-detail-controllers-models-router`
 
-## master-detail with controllers + models + router
+Moves routing to a separate file.
 
-Adds an express.Router, which moves the product routes to a separate file.
-
-The app uses the router.
-The router uses the controller.
-The controller puts model data into the res.render()
-
-### with pagination
+### `master-detail-controllers-models-router-pagination`
 
 Adds model, controller, and route for viewing 25 products at a time.
 
@@ -67,27 +60,21 @@ Displays page links for navigating from page to page.
 
 Updates detail.html to go back in the browser history (instead of navigating to `/products/`).
 
-## master-detail with multiple routers
+## `master-detail-controllers-models-multiple-routers`
 
 Adds employee list at route `/employees`
 Adds employee detail at route `/employees/:id`
 
-## notes app: master-detail + a form
 
-shows a form
-processes a form
-shows a list
-shows details
+## `form-basic`
 
+Shows 3-part flow for handling forms:
 
-## blog app: separate admin interface
+- `app.get()`: show a form
+- `app.post()`: process a form
+- `res.rediret()` to another page
 
-
-
-
-==== may not get this far...
-
-## `login.js`
-
-## blog app + login
-
+ 
+ 
+ 
+ 
