@@ -6,7 +6,7 @@ const helmet = require('helmet');
 const app = express();
 const server = http.createServer(app);
 
-const PORT = 3000;
+const PORT = 3005;
 const HOST = '0.0.0.0';
 
 const logger = morgan('tiny');
